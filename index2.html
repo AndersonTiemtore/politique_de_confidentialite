@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - Délégué d'or</title>
+    <style>
+        :root {
+            --primary: #FFD700;
+            --primary-dark: #E6C200;
+            --text: #2D3748;
+            --bg: #F7FAFC;
+            --gray: #718096;
+            --light-gray: #EDF2F7;
+            --accent: #4A5568;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light-gray);
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .table-of-contents {
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .table-of-contents h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .table-of-contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .table-of-contents li {
+            margin: 0.5rem 0;
+        }
+
+        .table-of-contents a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .table-of-contents a:hover {
+            color: var(--primary-dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .last-update {
+            color: var(--gray);
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            background: var(--light-gray);
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid var(--primary);
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--accent);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            margin-bottom: 1.2rem;
+            padding-left: 1.8rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight {
+            background: linear-gradient(to right, var(--bg), white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .contact-info {
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info h2 {
+            border-bottom: none;
+            margin-bottom: 1rem;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .table th, .table td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .table th {
+            background: var(--accent);
+            color: white;
+            font-weight: 600;
+        }
+
+        .table tr:nth-child(even) {
+            background: var(--bg);
+        }
+
+        .table tr:hover {
+            background: var(--light-gray);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary);
+            color: var(--text);
+            padding: 0.8rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: none;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">✨ Délégué d'or</div>
+            <h1>Politique de confidentialité</h1>
+            <p class="last-update">Dernière mise à jour : 21 février 2025</p>
+        </header>
+
+        <div class="table-of-contents">
+            <h3>Sommaire</h3>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#collecte">2. Informations collectées</a></li>
+                <li><a href="#utilisation">3. Utilisation des informations</a></li>
+                <li><a href="#conservation">4. Conservation des données</a></li>
+                <li><a href="#droits">5. Vos droits</a></li>
+                <li><a href="#securite">6. Sécurité</a></li>
+                <li><a href="#modifications">7. Modifications de la politique</a></li>
+                <li><a href="#contact">8. Nous contacter</a></li>
+            </ul>
+        </div>
+
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Chez Délégué d'or, nous accordons une importance capitale à la protection de vos données personnelles. Notre politique de confidentialité détaille de manière transparente nos pratiques concernant la collecte, l'utilisation et la protection de vos informations lors de l'utilisation de notre application mobile.</p>
+            <p>Notre engagement est de traiter vos données de manière équitable, légale et transparente, conformément au Règlement Général sur la Protection des Données (RGPD) et aux autres lois applicables en matière de protection des données.</p>
+        </section>
+
+        <section id="collecte">
+            <h2>2. Informations que nous collectons</h2>
+            <h3>2.1 Informations fournies directement :</h3>
+            <ul>
+                <li>Informations de profil (nom, prénom, photo de profil professionnelle)</li>
+                <li>Coordonnées professionnelles (email, téléphone, fonction)</li>
+                <li>Données de connexion et préférences utilisateur</li>
+                <li>Historique des communications avec notre support</li>
+            </ul>
+
+            <h3>2.2 Informations collectées automatiquement :</h3>
+            <ul>
+                <li>Données d'utilisation de l'application (fonctionnalités utilisées, temps passé)</li>
+                <li>Informations techniques sur l'appareil (type, système d'exploitation, version)</li>
+                <li>Journaux de connexion et activités de sécurité</li>
+                <li>Données de performance et rapports d'erreurs</li>
+            </ul>
+        </section>
+
+        <section id="utilisation">
+            <h2>3. Utilisation des informations</h2>
+            <p>Vos données sont utilisées dans le but de :</p>
+            <ul>
+                <li>Fournir nos services et optimiser leurs performances</li>
+                <li>Personnaliser votre expérience utilisateur</li>
+                <li>Garantir la sécurité de votre compte et prévenir la fraude</li>
+                <li>Vous tenir informé des mises à jour importantes</li>
+                <li>Respecter nos obligations légales et réglementaires</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>🔒 Notre engagement :</strong> Vos données personnelles ne sont jamais vendues, louées ou échangées avec des tiers à des fins commerciales. Nous les utilisons uniquement pour améliorer votre expérience et la qualité de nos services.
+            </div>
+        </section>
+
+        <section id="conservation">
+            <h2>4. Conservation des données</h2>
+            <p>Nous appliquons une politique de conservation des données stricte et transparente :</p>
+            <table class="table">
+                <tr>
+                    <th>Type de données</th>
+                    <th>Durée de conservation</th>
+                    <th>Justification</th>
+                </tr>
+                <tr>
+                    <td>Données de compte</td>
+                    <td>Durée de vie du compte + 3 mois</td>
+                    <td>Période de récupération post-suppression</td>
+                </tr>
+                <tr>
+                    <td>Données d'utilisation</td>
+                    <td>12 mois</td>
+                    <td>Analyse et amélioration des services</td>
+                </tr>
+                <tr>
+                    <td>Journaux de sécurité</td>
+                    <td>24 mois</td>
+                    <td>Conformité et sécurité</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="droits">
+            <h2>5. Vos droits</h2>
+            <p>En tant qu'utilisateur, le RGPD vous confère les droits suivants :</p>
+            <ul>
+                <li><strong>Droit d'accès :</strong> Consultez l'ensemble de vos données personnelles</li>
+                <li><strong>Droit de rectification :</strong> Corrigez ou mettez à jour vos informations</li>
+                <li><strong>Droit à l'effacement :</strong> Demandez la suppression de vos données</li>
+                <li><strong>Droit à la portabilité :</strong> Récupérez vos données dans un format structuré</li>
+                <li><strong>Droit d'opposition :</strong> Refusez le traitement de vos données</li>
+                <li><strong>Droit de limitation :</strong> Restreignez le traitement de vos données</li>
+            </ul>
+        </section>
+
+        <section id="securite">
+            <h2>6. Sécurité</h2>
+            <p>La sécurité de vos données est notre priorité. Nos mesures de protection comprennent :</p>
+            <ul>
+                <li>Chiffrement de bout en bout des données sensibles</li>
+                <li>Authentification renforcée avec validation en deux étapes</li>
+                <li>Surveillance 24/7 de notre infrastructure</li>
+                <li>Audits de sécurité trimestriels par des experts externes</li>
+            </ul>
+        </section>
+
+        <section id="modifications">
+            <h2>7. Modifications de la politique</h2>
+            <p>Cette politique peut évoluer pour refléter les améliorations de nos pratiques ou les changements réglementaires. Toute modification substantielle fera l'objet d'une notification préalable via :</p>
+            <ul>
+                <li>Email à l'adresse associée à votre compte</li>
+                <li>Notification dans l'application</li>
+                <li>Message sur notre page d'accueil</li>
+            </ul>
+        </section>
+
+        <div id="contact" class="contact-info">
+            <h2>8. Nous contacter</h2>
+            <p>Notre équipe de protection des données est à votre disposition pour toute question :</p>
+            <ul>
+                <li>📧 Email : <a href="mailto:dpo@delegue-or.com">dpo@delegue-or.com</a></li>
+                <li>📍 Adresse : 123 Avenue de la Protection des Données, 75008 Paris</li>
+                <li>📞 Téléphone : +33 (0)1 23 45 67 89</li>
+            </ul>
+            <p>Délai de réponse garanti sous 48 heures ouvrées.</p>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script>
+        // Afficher/masquer le bouton "Retour en haut"
+        window.onscroll = function() {
+            var button = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
